@@ -1,0 +1,112 @@
+<!-- 
+It is time to put your knowledge of JavaScript to work. 
+Your WEB 115 JavaScript Project requires you to create 
+an application for a fitness company. Form elements will 
+be used to accept user input which will be assigned to variables. 
+These variable values will make up the content of a new Web page 
+that will be generated when a form button is clicked. This is called
+ building a Web page "on-the-fly". I understand that you have not 
+ turned in any assignments that are identical to this during the 
+ course of the semester. That is precisely the point. You are now 
+ required to think outside of the box and be creative! That is why 
+ I'm allowing extra time for you to complete this work. I've provided 
+ you with an example of how to create a web page on the fly. You can 
+ find this invaluable example by scrolling to the bottom of this page.
+  Look for the folder named "Project Resources".  
+
+-->
+
+<!--
+1. Create an HTML document named finalProject.html. The title (tab) 
+should read WEB-115 Final Project. 
+
+2. Create a banner for your HTML form that includes your name, course, and section number. 
+This banner should also include the words "Build Your Meal Plan". Format this banner professionally 
+
+3. Create an external JavaScript document (with the .js file extension) named projectJS.js. '
+
+4. The meal plan will display the users input for 5 meals (Breakfast, snack, lunch, snack & dinner) for the week 
+(Monday – Sunday). 
+
+5. The user will have the ability to clear the weekly planner. User should also have the ability to print or download 
+planner.
+
+6. The application must collect the user's personal information name, email & goal for the week.  
+Create a form button. When clicked this button should call a function that generates a new Web 
+page displaying the meal plan based on the user input. Use the document.write() method to populate
+the newly generated Web page with all of the HTML elements, formatting, and variable values needed
+to produce the desired output in Web (.htm) format. HINT: a monospaced font will allow text wrapping
+in your output. You may also provide for this using CSS. Important! No meal plan should be generated
+until a proper email address is entered. This is the only validation requirement for this form.
+
+-->
+
+<html>
+<head>
+<title> WEB-115 Final Project </title>
+<img src="logoOpenPage.png" style="width: 100%; height: 100%;">
+</head>
+
+<body id="bodyTag">
+
+<div id="planCreator">
+    <button type="button" id='createPlan'>Create Plan Now!</button><br>
+    <button type="button" id='clearPlan'>Clear Plan</button>
+
+</div>
+
+
+
+<p id="tagForForm">
+
+</p>
+
+
+
+<script src="projectJS.js" defer>
+</script>
+
+
+</body>
+
+
+<style>
+   #myForm{
+    text-align: center;
+   }
+   body {
+    background-color: #8e8787;
+   }
+   #planCreator{
+    text-align: center;
+   }
+   #createPlan {
+    height: 50px;
+    width: 200px;
+    transition-duration: 0.4s;
+   }
+   #createPlan:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+   }
+   #createPlan {
+    text-align: center;
+   }
+
+
+   #clearPlan {
+    height: 50px;
+    width: 200px;
+    transition-duration: 0.4s;
+   }
+   #clearPlan:hover {
+    background-color: red; /* Red */
+    color: white;
+   }
+   #clearPlan {
+    text-align: center;
+   }
+
+</style>
+
+</html>
